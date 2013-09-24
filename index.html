@@ -1,8 +1,113 @@
 <!DOCTYPE html>
-<html>
-<head>
-</head>
-<body>
-  <h2>Coming Soon</h2>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nathan Osman">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Page title -->
+    <title>NitroShare on GitHub®</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding: 20px;
+      }
+      div.container {
+        max-width: 900px;
+      }
+      div.footer {
+        border-top: 1px solid #e5e5e5;
+        color: #777;
+        margin-top: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- Navigation bar -->
+      <div class="navbar navbar-default">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="/">
+		    <span class="glyphicon glyphicon-globe"></span>
+		    &nbsp;
+		    NitroShare on GitHub<sup>®</sup>
+		  </a>
+		</div>
+		<div class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav pull-right">
+		    <li><a href="#">Overview</a></li>
+		    <li><a href="#">About</a></li>
+		  </ul>
+		</div>
+      </div>
+      
+      <!-- Announcements -->
+      <div class="jumbotron">
+        <h1>We've Moved Our Code!</h1>
+        <p class="lead">
+          Our code has moved from LaunchPad to GitHub. Instead of a single project that builds all of the shared libraries and the GUI client, we now have separate projects each with their own version numbers for all components.
+        </p>
+        <p><a class="btn btn-lg btn-success" href="#">Read More</a></p>
+      </div>
+      
+      <!-- Description of components -->
+      <h2>Components</h2>
+      <p>The entire NitroShare project consists of the following components:</p>
+      <br>
+      
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>
+            <span class="glyphicon glyphicon-file"></span>
+            libnitroshareutil
+          </h4>
+          <p>Provides a number of utility base classes required by the other shared libraries</p>
+        </div>
+        <div class="col-sm-6">
+          <h4>
+            <span class="glyphicon glyphicon-file"></span>
+            libnitroshareproto
+          </h4>
+          <p>Provides an implementation of the NitroShare protocol (NSP)</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>
+            <span class="glyphicon glyphicon-file"></span>
+            libnitrosharegui
+          </h4>
+          <p>Provides a number of graphical components used by the desktop client</p>
+        </div>
+        <div class="col-sm-6">
+          <h4>
+            <span class="glyphicon glyphicon-file"></span>
+            nitroshare-client
+          </h4>
+          <p>The graphical desktop client that runs on client devices</p>
+        </div>
+      </div>
+      
+      <!-- Footer -->
+      <div class="footer">
+        <p>&copy; NitroShare 2013</p>
+      </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>

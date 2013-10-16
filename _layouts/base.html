@@ -32,35 +32,9 @@
   </head>
   <body>
     <div class="container">
-      
-      <!-- Navigation bar -->
-      <div class="navbar navbar-default">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		    <span class="icon-bar"></span>
-		    <span class="icon-bar"></span>
-		    <span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="/">
-		    <span class="glyphicon glyphicon-globe"></span>
-		    &nbsp;
-		    NitroShare on GitHub<sup>®</sup>
-		  </a>
-		</div>
-		<div class="navbar-collapse collapse">
-		  <ul class="nav navbar-nav pull-right">
-		    <li><a href="#">Overview</a></li>
-		    <li><a href="#">About</a></li>
-		  </ul>
-		</div>
-      </div>
-      
+      {% include header.html %}
       {{ content }}
-      
-      <!-- Footer -->
-      <div class="footer">
-        <p>&copy; NitroShare 2013</p>
-      </div>
+      {% include footer.html %}
     </div>
 
     <!-- JavaScript files -->
